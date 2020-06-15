@@ -1,0 +1,9 @@
+﻿
+@model List<WebApplication4.Models.tLoaiSach>
+
+@foreach (var item in Model)
+{
+    <li>
+        <a href="@Url.Action("SPTheoTheLoai", "Home", new {id = item.MaLoai.Trim()})">@item.TenLoai</a>
+    </li>
+}
